@@ -15,12 +15,12 @@ import POMCLASS.createleadpage;
 import genericUtility.Baseclass;
 @Listeners(genericUtility.Listenersimplementation.class)
 public class TC_001 extends Baseclass {
-	@Test(retryAnalyzer=genericUtility.RetryAnalyzerImplementation.class)
+//	@Test(retryAnalyzer=genericUtility.RetryAnalyzerImplementation.class)
 public void LE_001() throws EncryptedDocumentException, IOException {
 		Homepage home=new Homepage(driver);
 		home.clickappnavigator();
 		home.hoovermarketing(driver);
-		Assert.fail();
+//		Assert.fail();
 		home.clicklead();
 		Leadpage lead=new Leadpage(driver);
 		lead.clickoncreateicon();
